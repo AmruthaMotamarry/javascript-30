@@ -4,7 +4,7 @@
 function sort(){
 var s=document.getElementById("v").value;
 var a=s.split(" ");
-document.write(a.sort());}
+document.write(a.sort(function(a,b){return a-b;}));}
 </script>
 </head>
 <body>
