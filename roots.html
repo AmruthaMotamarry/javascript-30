@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function roots(){
+var n=document.getElementById("abc").value;
+var m=n.split(" ");
+var d=m[1]*m[1]-4*m[0]*m[2];
+if(d==0)
+document.write("equal");
+else if(d<0)
+document.write("imaginary");
+else
+document.write("real");
+}
+</script>
+</head>
+<body>
+<input type="text" id="abc"/>
+<input type="button" onclick="roots()"/>
+</body>
+</html>
